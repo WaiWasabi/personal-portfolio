@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
 <meta charset="UTF-8">
 <title>Aaron Tian - Home</title>
 <link rel='stylesheet' href='style.css'>
+<link rel='shortcut icon' type='gif' href='Images/hologram.gif'>
 </head>
 
 <body>
-<!-- This is a comment in HTML -->
 
-<!-- Created with guidance from w3schools: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
-
+<!-- Dropdown navbar created with guidance from css-tricks: 
+    https://css-tricks.com/solved-with-css-dropdown-menus/ -->
 <div class='navbar'>
-    <a href='#'>Home</a>
-
-    <div>
-        <button>Personal</button>
-        <span
-    </div>
-
-    <a href='#'>Home</a>
-    <a href='#'>Home</a>
-    <a href='#'>Home</a>
-    <a href='#'>Home</a>
-    <a href='#'>Home</a>
+    <ul class='navbar'>
+        <li><div class = 'vl'><p class='logo'>Aaron<br>Tian</p></div></li>
+        <li class='current'><a href='#'>HOME</a></li>
+        <li><a href="#">PERSONAL</a></li>
+            <ul class="dropdown">
+                <li><a href="#">BIO</a></li>
+                <li><a href="#">MY STATS</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        <li><a href="#">CS</a></li>
+        <li><a href="#">HUMANITIES</a></li>
+        <li><a href="#">SPANISH</a></li>
+        <li><a href="#">MATH</a></li>
+        <li><a href="#">PHYSICS</a></li>
+        <li><a href="#">STEM</a></li>
+    </ul>
 </div>
 
-<h2>You Have Stumbled Upon the Portfolio of</h2>
-<h1>Aaron Tian</h1>
+<div class='hero'>
+    <!-- fullscreen video background made with help from w3schools:
+    https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->
+    <video autoplay muted loop id='background-video'>
+        <!-- royalty free video from 
+        https://www.videvo.net/video/fractal-light-rays-rotating/1594/ -->
+        <source src='Images/background.mp4' type='video/mp4'>
+    </video>
 
-<p></p>
-
-<!-- styling acceptable for img -->
-<img alt="Claflin Hill Logo" src="Images/claflin.jpg"
-style="width:35em;">
+    <div class='header'>
+        <h2>You Have Stumbled Upon the Portfolio of</h2>
+        <h1>Aaron Tian</h1>
+    </div>
+</div>
 
 </body>
 </html>
