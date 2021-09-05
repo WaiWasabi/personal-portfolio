@@ -11,16 +11,18 @@
 
 <!-- Dropdown navbar created with guidance from css-tricks: 
     https://css-tricks.com/solved-with-css-dropdown-menus/ -->
-<div class='navbar'>
-    <ul class='navbar'>
-        <li><div class = 'vl'><p class='logo'>Aaron<br>Tian</p></div></li>
-        <li class='current'><a href='#'>HOME</a></li>
-        <li><a href="#">PERSONAL</a></li>
-            <ul class="dropdown">
-                <li><a href="#">BIO</a></li>
+<div class = 'navbar'>
+    <div class = 'logo'><p>Aaron<br>Tian</p></div>
+    <ul>
+        <li><a href='#'><span class='current'>HOME</span></a></li>
+        <li>
+            <a href="#">PERSONAL+</a>
+            <ul>
+                <li><a href="bio.html">BIO</a></li>
                 <li><a href="#">MY STATS</a></li>
                 <li><a href="#">BLOG</a></li>
             </ul>
+        </li>
         <li><a href="#">CS</a></li>
         <li><a href="#">HUMANITIES</a></li>
         <li><a href="#">SPANISH</a></li>
@@ -33,13 +35,14 @@
 <div class='hero'>
     <!-- fullscreen video background made with help from w3schools:
     https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->
+    
     <video autoplay muted loop id='background-video'>
         <!-- royalty free video from 
         https://www.videvo.net/video/fractal-light-rays-rotating/1594/ -->
         <source src='Images/background.mp4' type='video/mp4'>
     </video>
 
-    <div class='header'>
+    <div class='titlepage'>
         <h2>You Have Stumbled Upon the Portfolio of</h2>
         <h1>Aaron Tian</h1>
     </div>
