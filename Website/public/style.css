@@ -210,12 +210,11 @@ video .background-video {
 }
 
 .circle {
-	min-width: 1em;
-	min-height: 1em;
 	position: relative;
 	border-radius: 50%;
 	flex: 1;
 	padding: 5%;
+	overflow: hidden;
 }
 
 .content p {
