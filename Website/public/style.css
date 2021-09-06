@@ -12,6 +12,8 @@
 	src: url('Fonts/ailerons/Ailerons-Typeface.otf');
 }
 
+
+/* default settings */
 * {
 	font-family: 'main', sans-serif;
 	letter-spacing: 1px;
@@ -25,25 +27,27 @@ body {
 	overflow-x: hidden;
 }
 
+
+/* top navigation bar */
+
 /* help with flexbox from 
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties */
 
 .navbar {
-	padding-top: 1em;
-	background: linear-gradient(rgba(49, 49, 49, 0.7), rgba(100, 100, 100, 0));
+	background: linear-gradient(to bottom, rgba(50, 50, 50, 0.7), rgba(100, 100, 100, 0));
+	position: relative;
+	top: 0;
+	width: 100%;
+	margin: 10px 0 0 0;
 	display: flex;
 	justify-content:space-between;
 	flex-direction: row;
-	width: 100%;
-	position: relative;
-	top: 0;
-	margin: 0;
 }
 
-.navbar .logo {
+.navbar .logo-container {
 	display: inline-block;
 	position: relative;
-	padding: 5px 0 5px 2em;
+	padding: 5px 0.5em 5px 2em;
 	border-right: 5px whitesmoke;
 	border-right-style: solid;
 	border-width: 3px;
@@ -51,7 +55,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties */
 	z-index: 10;
 }
 
-.logo p {
+.logo-container p {
 	position: relative;
 	font-family: 'logo', sans-serif;
 	font-size: 2em;
@@ -59,7 +63,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties */
 	letter-spacing: 5px;
 	line-height: 0.9em;
 	text-align: right;
-	padding-right: 0.5em;
 	margin: 0;
 }
 
@@ -71,7 +74,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties */
 	margin: 0;
 	padding: 0;
 	z-index: 9;
-	
 	display: inline-flex;
 	width: 100%;
 	align-items: center;
@@ -86,21 +88,17 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties */
 	height: 100%;
 	justify-content: space-evenly;
 	align-items: center;
-	text-align: center;
 	list-style-type: none;
-	transition-duration: 0.5s;
-
 	flex: 1;
 }
 
 .navbar ul li > a {
 	color: whitesmoke;
-	font-size: 1em;
 	text-decoration: none;
 }
 
 .navbar ul li > ul {
-	background: linear-gradient(to left, rgba(247, 185, 69, 0) 95%, rgba(18, 219, 255, 0.9));
+	background: linear-gradient(to left, rgba(247, 185, 69, 0) 95%, rgba(18, 219, 255, 0.6));
 	position: absolute;
 	top: 100%;
 	display: none;
@@ -116,7 +114,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties */
 }
 
 .navbar ul li:hover {
-	background: linear-gradient(to left, rgba(255, 160, 18, 0.9) 0%, rgba(255, 255, 255, 0) 5% 95%, rgba(18, 219, 255, 0.9) 100%);
+	background: linear-gradient(to left, rgba(255, 160, 18, 0.6) 0%, rgba(255, 255, 255, 0) 5% 95%, rgba(18, 219, 255, 0.6) 100%);
 	cursor: pointer;
 }
 
@@ -125,7 +123,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties */
 }
 
 .navbar ul li > ul li:hover {
-	background: linear-gradient(to right, rgba(247, 185, 69, 0) 95%, rgba(255, 160, 18, 0.9));
+	background: linear-gradient(to right, rgba(247, 185, 69, 0) 95%, rgba(255, 160, 18, 0.6));
 }
 
 .current {
