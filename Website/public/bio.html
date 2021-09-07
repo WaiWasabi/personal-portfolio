@@ -9,7 +9,7 @@
 
 <body>
     <div class = 'navbar'>
-        <div class = 'logo'><p>Aaron<br>Tian</p></div>
+        <div class = 'logo-container'><p>Aaron<br>Tian</p></div>
         <ul>
             <li><a href='index.html'><span>HOME</span></a></li>
             <li>
@@ -30,6 +30,7 @@
     </div>
     
     <div class='header'>
+        <div class="video-overlay"></div>
         <video autoplay muted loop id='background-video'>
             <!-- royalty free video from 
             https://www.videvo.net/video/fractal-light-rays-rotating/1594/ -->
@@ -39,14 +40,78 @@
     </div>
 
     <div class="content-wrapper">
-        <div class="content">
-            <p class='dark'>I’m Aaron Tian, a Junior at the Massachusetts Academy of Math and Science. 
-                I lived in a small apartment in Worcester, MA for the first few years of my life, but I moved to 
-                Westborough at the beginning of elementary school and have been 
-                living there ever since. </p>
+        <div class="horizontal-banner">
+            <div class="main-content dark-blue">
+                <div class="notecard light-tan">
+                    <h2>I’m Aaron Tian, a Junior at the Massachusetts Academy of Math and Science.
+                        I lived in a small apartment in Worcester, MA for the first few years of my life, but I moved to
+                        Westborough at the beginning of elementary school and have been
+                        living there ever since. </h2>
+                    
+                    <h1 class='center'>Scroll to learn more about me!</h1>
+                </div>
+            </div>
+            <div class="side-content dark-orange">
+                <div class="square-container"><img src='Images/aaron.jpg' alt='me :)' class='circle'></div>
+            </div>  
         </div>
-        <img src='Images/aaron.jpg' alt='me :)' class='circle'>
+
+        <div class="horizontal-banner">
+            <div class="subheading light-orange">
+                <h1>Clarinet</h1>
+            </div>
+        </div>
+        
+        <div class="horizontal-banner">
+            <div class="split-content light-blue">
+                <div class="notecard dark-blue">
+                    <div class="text-wrapper">
+                        <h2>My Origin Story</h2>
+                        <p>
+                            I didn’t even know what a clarinet was until the moment I decided to play it. In 4th grade,
+                             the elementary school band director showed us a video demonstrating every band instrument.
+                             One line caught my attention: “the clarinet has the widest range of all wind instruments.”
+                             Something about being able to play more notes than everyone else appealed to me, and I’ve stuck
+                              with the instrument ever since. I don’t think I was particularly good at it early on; I was
+                               also playing piano and viola then, and I lacked the time and resolve to perfect all of
+                               them. It didn’t help that an amateur clarinet sound is positively hideous, and practicing it
+                               came at the expense of my family’s sanity. With persistence, however, I found that I
+                               was capable of producing incredible timbres and overtones unique to the clarinet. The rich,
+                               chocolatey texture is probably what I love most about the instrument.
+                        </p>
+                        <p>I have two people to thank: my teacher, Jessica Popik, and my middle school band director,
+                            Karen Forrest. These mentors encouraged me to push my boundaries to the limit, and I
+                            wouldn’t be where I am today without them.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="split-content light-tan">
+                <div class="text-wrapper">
+                    <h2>Districts and All State</h2>
+                    <p>I have participated in the Central District Music Festival since 7th grade, and I was fortunate enough
+                        to be a part of the Massachusetts All-State festival in my freshman year: one of my most memorable experiences
+                        to date. The guest conductor was a truly charismatic person-his enthusiasm rippled across every one 
+                        of the 100+ musicians in the band room, and he cultivated a sense of community between us. We
+                        performed at Symphony Hall after 3 consecutive days of nonstop practice. Seeing the conductor cut off
+                        the final chord of David Maslanka’s "Give Us This Day" with a triumphant smile gave me a feeling of exhilaration 
+                        that I don’t think I’ll ever be able to recreate. I returned to the All-State Festival again in sophomore year, 
+                        but the virtual experience was nowhere near as exciting as the real thing.</p>
+                </div>
+                <!--IMG: MMEA Logo, SRC: https://www.bso.org/Performance/Detail/107752-->
+                <div class="image-wrapper"><img src="Images/mmea.jpg" alt="MMEA Logo" style="width:20em"></div>
+            </div>
+        </div>
+        
+        <div class="horizontal-banner">
+            <div class="subheading dark-blue">
+                <h1>Machine Learning</h1>
+            </div>
+        </div>
+
     </div>
+
 
     <div class="footer">
         
