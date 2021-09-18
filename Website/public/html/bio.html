@@ -15,29 +15,30 @@
     </video>
     <div class="video-overlay"></div>
 
-    <div class = 'navbar'>
-        <div class = 'logo-container'><p class='logo'>Aaron<br>Tian</p></div>
-        <ul>
-            <li><a href='../index.html'><span>HOME</span></a></li>
+    <div id="navbar-spacer"></div>
+    <nav>
+        <div id='logo-container'><p class='logo'>Aaron<br>Tian</p></div>
+        <ul id='nav-links'>
+            <li><a href='../index.html'><span>home()</span></a></li>
             <li>
-                <a href="#" class='current parent'>PERSONAL+</a>
-                <ul>
-                    <li><a href="bio.html" class='current'>BIO</a></li>
-                    <li><a href="stats.html">MY STATS</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
+                <a href="#" class='current'><span class="current">>> Personal</span></a>
+                <ul class='subnav'>
+                    <li><a href="bio.html"><span class="current">.bio()</span></a></li>
+                    <li><a href="stats.html"><span>.stats()</span></a></li>
+                    <li><a href="blog.html"><span>.blog()</span></a></li>
                 </ul>
             </li>
-            <li><a href="cs.html">CS</a></li>
-            <li><a href="hum.html">HUMANITIES</a></li>
-            <li><a href="lang.html">SPANISH</a></li>
-            <li><a href="math.html">MATH</a></li>
-            <li><a href="physics.html">PHYSICS</a></li>
-            <li><a href="stem.html">STEM</a></li>
+            <li><a href="cs.html"><span>cs()</span></a></li>
+            <li><a href="hum.html"><span>humanities()</span></a></li>
+            <li><a href="lang.html"><span>spanish()</span></a></li>
+            <li><a href="math.html"><span>math()</span></a></li>
+            <li><a href="physics.html"><span>physics()</span></a></li>
+            <li><a href="stem.html"><span>stem()</span></a></li>
         </ul>
-    </div>
+    </nav>
     
-    <div class='header'>
-        <div><h1 class='logo'>Biography</p></div>
+    <div id='title'>
+        <div><h1 class='logo'>About Me</p></div>
     </div>
 
     <div class="content-wrapper">
@@ -160,7 +161,7 @@
                             the code. The joy that I felt when the model finished training with 98% test accuracy on the MNIST dataset is indescribable.</p>
 
                         <p>Today, I have a much better grasp of machine learning than I did 4 years ago, and I smile at the progress I’ve made since then.
-                            I wouldn’t say I’m an expert-I wouldn’t even say I’m proficient, but I would say that every step brings my goal closer in sight.
+                            I wouldn’t say I’m an expert; there's so much I have yet to learn, but I would say that every step brings my goal closer in sight.
                             Some of my projects can be found below, and you can view the public code on my <a href='https://github.com/WaiWasabi/'>Github</a>.</p>
                 </div>
             </div>
@@ -180,5 +181,6 @@
     <div class="footer">
         
     </div>
+    <script src='../app.js'></script>
 </body>
 </html>

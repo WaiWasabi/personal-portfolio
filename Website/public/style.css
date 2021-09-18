@@ -19,97 +19,94 @@
 	letter-spacing: 1px;
 }
 
+body {
+	color: #f5f5f5;
+	margin: 0;
+	background: rgb(4, 7, 10);
+	background-image: url("Images/background.mp4");
+	overflow-x: hidden;
+}
+
 .center {
 	text-align: center;
-}
-
-.logo {
-	font-family: 'logo', sans-serif;
-	font-weight: normal;
-	margin: 0;
-	letter-spacing: 5px;
-	line-height: 0.9em;
-	padding: 0;
-}
-
-.logo:hover {
-	cursor: default;
 }
 
 .lock {
 	overflow: hidden;
 }
 
+.logo {
+	font-family: 'logo', sans-serif;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 5px;
+	line-height: 0.9em;
+}
+
+.logo:hover {
+	cursor: default;
+}
+
 #background-video {
-	position: absolute;
+	position: fixed;
 	z-index: -100;
+	top: 0;
 }
 
 .video-overlay {
-	background:rgba(0, 0, 0, 0.2);
+	background:rgba(4, 7, 10, 0.4);
 	position: fixed;
-	z-index: 0;
+	z-index: -99;
 	width: 100vw;
 	height: 100vh;
-	top: 0;
-	left: 0;
 }
-
-body {
-	color: #f5f5f5;
-	margin: 0;
-	padding: 0;
-	background: #000;
-	background-image: url("Images/background.mp4");
-	overflow-x: hidden;
-}
-
 
 /* top navigation bar */
 
 /* help with flexbox from 
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties */
 
-.navbar {
+#navbar-spacer {
+	height: 7px;
+	background: rgba(4, 7, 10, 0.7);
+}
+
+nav {
 	width: 100%;
 	margin: 0;
-	padding: 7px 0;
+	padding: 0;
 	background: linear-gradient(to bottom, rgba(4, 7, 10, 0.7), rgba(4, 7, 10, 0));
-	position: absolute;
-	z-index: 9;
-	top: 0;
+	position: fixed;
 	display: flex;
 	justify-content:space-between;
 	flex-direction: row;	
 }
 
-.navbar .logo-container {
+nav #logo-container {
 	border-right: 5px whitesmoke solid;
 	border-width: 3px;
 	width: 10em;
-	padding: 5px 0.5em 5px 2em;
-	position: relative;
-	z-index: 10;
-	display: inline-block;
+	padding: 5px 0.5em 5px 0.7em;
 }
 
-.logo-container p {
+#logo-container p {
 	font-size: 2em;
 	text-align: right;
 }
 
-.navbar ul {
+#nav-links {
 	margin: 0;
 	padding: 0;
 	z-index: 10;
-	display: inline-flex;
+	display: flex;
 	width: 100%;
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-.navbar ul li {
+#nav-links li {
 	display: flex;
 	position: relative;
 	flex-direction: column;
@@ -120,90 +117,72 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties */
 	flex: 1;
 }
 
-.navbar ul li > a {
+#nav-links li > a {
 	color: whitesmoke;
 	text-decoration: none;
+	font-size: 1.1em;
 }
 
-.navbar ul li > ul {
-	background: linear-gradient(to left, rgba(247, 185, 69, 0) 95%, rgba(18, 219, 255, 0.6));
+.subnav {
+	background: linear-gradient(to left, rgba(4, 7, 10, 0) 95%, rgba(18, 219, 255, 0.6));
 	position: absolute;
 	top: 100%;
 	display: none;
 	flex-direction: column;
 	justify-content: space-evenly;
 	width: 100%;
+	padding: 0;
 }
 
-.navbar ul li > ul li {
+.subnav li {
 	width: 100%;
-	padding: 1.5em 0 1.5em 0;
+	padding: 1.5em 0;
 	flex: 1;
 }
 
-.navbar ul li:hover {
-	background: linear-gradient(to left, rgba(255, 160, 18, 0.6) 0%, rgba(255, 255, 255, 0) 5% 95%, rgba(18, 219, 255, 0.6) 100%);
+#nav-links > li:hover {
+	background: linear-gradient(to left, rgba(255, 160, 18, 0.60) 0%, rgba(4, 7, 10, 0) 5% 95%, rgba(18, 219, 255, 0.6) 100%);
 	cursor: pointer;
 }
 
-.navbar ul li:hover > ul {
+#nav-links > li:hover > .subnav {
 	display: flex;
 }
 
-.navbar ul li > ul li:hover {
-	background: linear-gradient(to right, rgba(247, 185, 69, 0) 95%, rgba(255, 160, 18, 0.6));
+.subnav li:hover {
+	background: linear-gradient(to right, rgba(4, 7, 10, 0) 95%, rgba(255, 160, 18, 0.6));
 }
 
 .current {
-	border-bottom: whitesmoke solid 1px;
-	padding-bottom: 5px;
+	color: rgb(172, 172, 172);
 }
 
-.parent {
-	border-bottom: whitesmoke dashed 1px;
-}
-
-
-#titlepage {
-	position: absolute;
+#title {
 	width: 100%;
-	top: 28%;
-	margin-top: 5em;
 	text-align: center;
-	z-index: 3;
+	margin-top: 32vh;
+	position: fixed;
 }
 
-#titlepage h1 {
+#title h1 {
 	font-size: 10vw;
+	margin-top: 0.1em;
 }
 
-#titlepage h2 {
+#title h2 {
 	font-size: 1.5vw;
 }
 
 /* Content Page */
 
-.header {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.header h1 {
-	font-size: 8vw;
-}
-
 /* box shadows from https://getcssscan.com/css-box-shadow-examples */
 
 .content-wrapper {
-	position: relative;
-	left: 0;
+	position: absolute;
+	top: 100vh;
 	background-color: rgb(4, 7, 10);
 	width: 100%;
-	padding: 0;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -214,17 +193,13 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties */
 	flex-flow: row wrap;
 	align-items: stretch;
 	justify-content: center;
-	width: 100%;
-	position: relative;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .main-content {
 	min-width: 30em;
 	flex: 1.5;
-	padding: 3.5em;
-	display: flex;
-	flex-direction: column;
+	padding: 4em;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -274,7 +249,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties */
 	align-items: center;
 	box-shadow: none;
 	min-width: 20em;
-
 }
 
 .square-container {
