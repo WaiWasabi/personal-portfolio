@@ -4,47 +4,47 @@
 <meta charset="UTF-8">
 <title>Aaron Tian - Home</title>
 <link rel='stylesheet' href='style.css'>
-<link rel='shortcut icon' type='gif' href='Images/hologram.gif'>
 </head>
 
-<body>
+<body class='lock'>
+<!-- fullscreen video background made with help from w3schools:
+https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->
+
+<video autoplay muted loop id='background-video'>
+    <!-- royalty free video from 
+    https://www.videvo.net/video/fractal-light-rays-rotating/1594/ -->
+    <source src='Images/background.mp4' type='video/mp4'>
+</video>
+<div class="video-overlay"></div>
+
 
 <!-- Dropdown navbar created with guidance from css-tricks: 
     https://css-tricks.com/solved-with-css-dropdown-menus/ -->
 <div class = 'navbar'>
-    <div class = 'logo-container'><p>Aaron<br>Tian</p></div>
+    <div class = 'logo-container'><p class='logo'>Aaron<br>Tian</p></div>
     <ul>
         <li><a href='#'><span class='current'>HOME</span></a></li>
         <li>
             <a href="#">PERSONAL+</a>
             <ul>
-                <li><a href="bio.html">BIO</a></li>
-                <li><a href="#">MY STATS</a></li>
-                <li><a href="#">BLOG</a></li>
+                <li><a href="html/bio.html">BIO</a></li>
+                <li><a href="html/stats.html">MY STATS</a></li>
+                <li><a href="html/blog.html">BLOG</a></li>
             </ul>
         </li>
-        <li><a href="#">CS</a></li>
-        <li><a href="#">HUMANITIES</a></li>
-        <li><a href="#">SPANISH</a></li>
-        <li><a href="#">MATH</a></li>
-        <li><a href="#">PHYSICS</a></li>
-        <li><a href="#">STEM</a></li>
+        <li><a href="html/cs.html">CS</a></li>
+        <li><a href="html/hum.html">HUMANITIES</a></li>
+        <li><a href="html/lang.html">SPANISH</a></li>
+        <li><a href="html/math.html">MATH</a></li>
+        <li><a href="html/physics.html">PHYSICS</a></li>
+        <li><a href="html/stem.html">STEM</a></li>
     </ul>
 </div>
 
 <div class='hero'>
-    <!-- fullscreen video background made with help from w3schools:
-    https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->
-    <video autoplay muted loop id='background-video'>
-        <!-- royalty free video from 
-        https://www.videvo.net/video/fractal-light-rays-rotating/1594/ -->
-        <source src='Images/background.mp4' type='video/mp4'>
-    </video>
-    <div class="video-overlay"></div>
-    
-    <div class='titlepage'>
-        <h2>You Have Stumbled Upon the Portfolio of</h2>
-        <h1>Aaron Tian</h1>
+    <div id='titlepage'>
+        <h2 class='logo'>You Have Stumbled Upon the Portfolio of</h2>
+        <h1 class='logo'>Aaron Tian</h1>
     </div>
 </div>
 
