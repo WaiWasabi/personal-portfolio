@@ -15,26 +15,30 @@
     </video>
     <div class="video-overlay"></div>
 
-    <div id="navbar-spacer"></div>
     <nav>
-        <div id='logo-container'><p class='logo'>Aaron<br>Tian</p></div>
+        <div id='logo-container'><p class='logo'>Aaron Tian</p></div>
         <ul id='nav-links'>
-            <li><a href='../index.html'><span>home()</span></a></li>
-            <li>
-                <a href="#" class='current'><span class="current">>> Personal</span></a>
+            <li></div><a href='../index.html'><div class="bg"></div></a><p><span>home</span>()</p></li>
+            <li></div>
+                <a href="#" class='current'><div class="bg"></div></a><p>>> <span class="current">Personal</span></p>
                 <ul class='subnav'>
-                    <li><a href="bio.html"><span class="current">.bio()</span></a></li>
-                    <li><a href="stats.html"><span>.stats()</span></a></li>
-                    <li><a href="blog.html"><span>.blog()</span></a></li>
+                    <li></div><a href="bio.html"><div class="bg"></div></a><p>.<span class="current">bio</span>()</p></li>
+                    <li></div><a href="stats.html"><div class="bg"></div></a><p>.<span>stats</span>()</p></li>
+                    <li></div><a href="blog.html"><div class="bg"></div></a><p>.<span>blog</span>()</p></li>
                 </ul>
             </li>
-            <li><a href="cs.html"><span>cs()</span></a></li>
-            <li><a href="hum.html"><span>humanities()</span></a></li>
-            <li><a href="lang.html"><span>spanish()</span></a></li>
-            <li><a href="math.html"><span>math()</span></a></li>
-            <li><a href="physics.html"><span>physics()</span></a></li>
-            <li><a href="stem.html"><span>stem()</span></a></li>
+            <li></div><a href="cs.html"><div class="bg"></div></a><p><span>cs</span>()</p></li>
+            <li></div><a href="hum.html"><div class="bg"></div></a><p><span>humanities</span>()</p></li>
+            <li></div><a href="lang.html"><div class="bg"></div></a><p><span>spanish</span>()</p></li>
+            <li></div><a href="math.html"><div class="bg"></div></a><p><span>math</span>()</p></li>
+            <li></div><a href="physics.html"><div class="bg"></div></a><p><span>physics</span>()</p></li>
+            <li></div><a href="stem.html"><div class="bg"></div></a><p><span>stem</span>()</p></li>
         </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line shorter"></div>
+            <div class="line shortest"></div>
+        </div>
     </nav>
     
     <div id='title'>
@@ -42,42 +46,84 @@
     </div>
 
     <div class="content-wrapper">
+        <div class="horizontal-banner heading">
+            <h2>C:\Users\aaron> python<br>
+                Python 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)] on win32
+                Type "help", "copyright", "credits" or "license" for more information. <br></h2>
+            <h1>>>> <span class="keyword">class</span> <span class="off-white">Person</span>():</h1>
+        </div>
         <div class="horizontal-banner">
-            <div class="main-content dark-blue">
-                <div class="notecard light-tan">
-                    <h2>I’m Aaron Tian, a Junior at the Massachusetts Academy of Math and Science.
-                        I lived in a small apartment in Worcester, MA for the first few years of my life, but I moved to
-                        Westborough at the beginning of elementary school and have been
-                        living there ever since. </h2>
-                    
-                    <h1 class='center'>Scroll to learn more about me!</h1>
+            <div class="main-content base-light">
+                <h1><span class="keyword">def</span> <span class="method">__init__</span>(<span class='const'>self</span>):</h1>
+                <div class="tab">
+                    <h3 class='string'>"""<br>I’m Aaron Tian, a Junior at the Massachusetts Academy of Math and Science. I was apprehensive
+                        about leaving my hometown of Westborough at first, but after coming to MAMS I can confidently state that I have no regrets.
+                        I love what I do here, and I hope to share that passion with you through this portfolio—or ‘class,’ if you will.<br>"""</h3>
+                    <br>
+                    <h3><span class="const">self</span>.name = <span class="string">"Aaron Tian"</span></h3>
+                    <h3><span class="const">self</span>.age = <span class="num">16.</span></h3>
+                    <h3><span class="const">self</span>.can_play_piano = <span class="keyword">False</span></h3>
                 </div>
+
+                <h2 class='center'>scroll down to learn more about me!</h2>
+
             </div>
-            <div class="side-content light-blue">
-                <div class="square-container"><img src='../Images/aaron.jpg' alt='me :)' class='circle'></div>
+            <div class="side-content base">
+                <img src='../Images/aaron.jpg' alt='me :)' id='portrait' class='circle' style="width: 320px">
             </div>
         </div>
 
         <div class="horizontal-banner">
-            <div class="subheading light-orange">
+            <div class="subheading base-purple">
                 <h1 class='center'>Clarinet</h1>
             </div>
-        </div>  
-        
+        </div>
+
         <div class="horizontal-banner">
-            <div class="split-content light-blue">
+            <div class="main-content base-light">
+                <h3><span class="keyword">def</span> <span class="method">getFavoritePieces</span>(<span class='const'>self</span>, num_tracks,
+                genre=<span class="string"><span class="string">'classical'</span></span>):</h3>
+                <div class="tab">
+                <h3><span class="const">self</span>.playlist = pickle.<span class="off-white">load</span>(<span class="off-white">open</span>(<span class="string">'Data/playlist'</span>))</h3>
+                <h3>num_tracks = <span class="off-white">min</span>(num_tracks, <span class="off-white">len</span>(<span class="const">self</span>.playlist))</h3>
+                <br>
+                <h3><span class="keyword">if</span> genre == <span class="string">'classical'</span>:</h3>
+                <div class="tab">
+                    <h3><span><span class="keyword">return</span> <span class="const">self</span>.playlist[:num_tracks]</span></h3>
+                </div>
+                <h3><span class="keyword">else</span>:</h3>
+                    <div class="tab">
+                        <h3><span class="keyword">return</span> <span class="string">f'</span>{<span class="const">self</span>.name} <span class="string">
+                                does have anything other than classical music in his playlist, but he reserves
+                                "Castle on the Hill - Ed Sheeran" as his favorite pop song in case anyone asks.'
+                            </span>
+                        </h3>
+                    </div>
+                </div>
+                <br>
+                <h3>>>> .<span class="method">getFavoritePieces</span>(<span class="num">5</span>)</h3>
+                <h3>[<span class="string">'Ballade no. 1 - Chopin'</span>,
+                    <span class="string">'Widmung - Schumann arr. Liszt'</span>,
+                    <span class="string">'Danse Macabre - Saint Saens'</span>,
+                    <span class="string">'Etude op. 10 no. 3 - Chopin'</span>,
+                    <span class="string">'Carmen Fantaisie - Sarasate arr. Baldeyrou'</span>]</h3>
+            </div>
+        </div>
+        
+        <div class="horizontal-banner grey-to-orange">
+            <div class="split-content">
                 <div class="notecard dark-blue">
                     <div class="text-wrapper">
-                        <h2>My Origin Story</h2>
-                        <p>I didn’t even know what a clarinet was until the moment I decided to play it. In 4th grade,
-                            the elementary school band director showed us a video demonstrating every band instrument.
-                            One line caught my attention: “the clarinet has the widest range of all wind instruments.”
+                        <h2 class='method'>My Origin Story</h2>
+                        <p>I didn’t even know what a clarinet was until the moment I decided to play it. In the 4th grade,
+                            I was shown a demonstrative video of wind instruments as part of an effort to recruit students to the band.
+                            One line caught my attention: “the clarinet has the widest range of all woodwinds.”
                             Something about being able to play more notes than everyone else appealed to me, and I’ve stuck
-                            with the instrument ever since. I don’t think I was particularly good at it early on; I was
-                            also playing piano and viola then, and I lacked the time and resolve to perfect all of
+                            with the clarinet ever since. I don’t think I was particularly good at it early on; I was
+                            also playing piano and viola then, and I lacked the time and dedication to perfect all of
                             them. It didn’t help that an amateur clarinet sound is positively hideous, and practicing it
                             came at the expense of my family’s sanity. With persistence, however, I found that I
-                            was capable of producing incredible timbres and overtones unique to the clarinet. The rich,
+                            could produce incredible timbres and overtones unique to the clarinet. The rich,
                             chocolatey texture is probably what I love most about the instrument.</p>
 
                         <p>I have two people to thank: my clarinet teacher, Jessica Popik, and my middle school band director,
@@ -86,44 +132,51 @@
                     </div>
                 </div>
             </div>
-
-            <div class="split-content light-tan">
+        
+            <div class="split-content">
                 <div class="text-wrapper">
-                    <h2>Districts and All State</h2>
-                    <p>I have participated in the Central District Music Festival since 7th grade, and I was fortunate enough to be a part
+                    <h2 class='method'>District and All State</h2>
+                    <p>I have participated in the Central District Music Festival since 7th grade and was fortunate enough to be a part
                         of the Massachusetts All-State festival in my freshman year: one of my most memorable experiences to date. The guest
                         conductor, <a href="https://www.hartford.edu/directory/hartt/adsit-glen.aspx">Glen Adsit</a>, was a truly charismatic
-                        person; his enthusiasm rippled across every one of the 100+ musicians
-                        in the hall, and he cultivated a sense of community between us. He was particularly fond of a composer friend of his,
-                        David Maslanka, whose music helped him develop a deeper sense of spirituality during his battle with cancer. Adsit
-                        had an opportunity to meet personally with Maslanka, and he recovered from his illness soon afterward. Our closing
+                        person; he touched every one of the 100+ musicians
+                        in the hall with his enthusiasm and cultivated a sense of community between us. He was particularly fond of a composer friend of his,
+                        David Maslanka, the music of whom helped him develop a deeper sense of spirituality during his battle with cancer. Adsit
+                        had the opportunity to meet personally with Maslanka, and he recovered from his illness soon afterward. Our closing
                         piece, as he informed us, was a token of gratitude and a tribute to his friend’s death.
                     </p>
                     <p>We performed at Symphony Hall after 3 consecutive days of nonstop practice. Seeing Prof. Adsit cut off the final chord of 
-                        Maslanka’s “Give Us This Day” gave me a feeling of exhilaration that I don’t think I’ll ever be able to recreate. I 
+                        Maslanka’s “Give Us This Day” gave me a profound feeling of exhilaration that I doubt I will ever recreate. I 
                         returned to the All-State Festival again in sophomore year, but the virtual experience was nowhere near as exciting as the
                         real thing.</p>
                 </div>
                 <!--IMG: MMEA Logo, SRC: https://www.bso.org/Performance/Detail/107752-->
-                <div class="image-wrapper"><img src="../Images/mmea.jpg" alt="MMEA Logo" style="width:20em"></div>
+                <div class="image-wrapper"><img src="../Images/mmea.jpg" alt="MMEA Logo" style="width:20em; opacity: 95%"></div>
             </div>
+        </div>
 
-            <div class="full-content light-orange">
-                <div class="notecard light-tan">
+        <div class="horizontal-banner">
+            <div class="full-content orange-to-purple">
+                <div class="notecard base-light">
                     <div class="text-wrapper">
-                        <h2>Claflin Hill</h2>
-                        <p> I played in the Claflin Hill Youth Wind Ensemble from 2017-2020. I was generously offered a seat on my first 
+                        <h2 class='method'>Claflin Hill</h2>
+                        <p> I played in the <a href="https://www.claflinhill.com/home">Claflin Hill Youth Wind Ensemble</a> from 2017-2020. 
+                            I was generously offered a seat on my first
                             audition by the director, Paul Surapine, who evidently believed he could “whip me into shape”—for lack of a 
                             better term. The experience was uncharted territory for me: the expectations were high, the music was difficult,
                             and the other musicians were several heads taller than me. Admittedly, I was quite lost for the entire first 
                             year. I struggled to play through tough passages despite practicing for hours, while the rest of my section 
                             seemingly breezed through entire pieces on the first read. The concertmaster was particularly formidable—his
                             technique and intonation were unmatched, and he served as a role model for me. </p>
-                            <a href="https://www.claflinhill.com/home">Website</a></p>
+                        
+                            <p>Claflin showed me a beauty in music that I had never encountered in the cacophony known as middle school band.
+                                I used to believe that music was a procedure: a methodical practice in which playing the right notes and rhythms 
+                                corresponded to checked boxes on a rubric. After joining CHYS, I practiced so that I might play like the concertmaster 
+                                whom I looked up to so intently. I grew rapidly, and in my third year I rose to take the 1st chair after my idol graduated.</p>
                     </div>
-                    <div class="image-wrapper"><img src="../Images/claflin.jpg" alt="claflin hill logo" style="width:30em"></div>
+                    <br>
+                    <div class="image-wrapper"><img src="../Images/claflin.jpg" alt="claflin hill logo" style="width:30em; opacity: 90%"></div>
                 </div>
-
             </div>
         </div>
         
@@ -142,11 +195,11 @@
                         (it was also written in TensorFlow 1.x. Blasphemous, right?). But the concept of making world-changing applications without
                         needing materials or a lab was appealing to me, and harnessing that power became an obsession. </p>
 
-                        <p>The code was written in Python, and I had a limited understanding of the language. To prac   tice, I started making scripts to
-                            solve problems I encountered in school, searching things up on the Internet when I needed to expand my toolkit. Looking back
-                            at the code I wrote back in 8th grade, I laugh at its naivety (and it was written in Azure Notebooks… pfft). But it was all
-                            a part of the learning process, and each project deepened my understanding. By the start of my freshman year, I could solve
-                            problems that I never dreamed of solving previously. </p>
+                        <p>The code was written in Python, and I had a limited understanding of the language. To practice, I started making scripts to
+                            solve problems I encountered in school, searching up concepts on the Internet when I needed to expand my toolkit. Looking back
+                            at the code I wrote back then, I laugh at its naivety (it was also written in Azure Notebooks... nostalgic). But it was all
+                            part of the learning process, and every project gave me valuable experience. By the start of my freshman year, I could solve
+                            problems that I never dreamed of approaching previously. </p>
 
 
                         <p>With a newfound understanding of Python, I revisited the code I wrote years ago. Its syntax made sense to me now; it was
@@ -156,13 +209,14 @@
                             but learning these concepts was a necessary next step. I picked up just enough to re-derive each of the equations with meticulous 
                             practice and some help from the internet.</p>
                         
-                        <p>Equipped this knowledge, I managed to build a trainable CNN from scratch, deriving all of the forward-pass and backward-pass algorithms
+                        <p>Equipped with this knowledge, I managed to build a trainable CNN from scratch, deriving all of the forward and backward-pass algorithms
                             for gradient descent by hand. I pondered for hours on how to approach this problem, and I spent orders of magnitude more time debugging
                             the code. The joy that I felt when the model finished training with 98% test accuracy on the MNIST dataset is indescribable.</p>
 
-                        <p>Today, I have a much better grasp of machine learning than I did 4 years ago, and I smile at the progress I’ve made since then.
-                            I wouldn’t say I’m an expert; there's so much I have yet to learn, but I would say that every step brings my goal closer in sight.
-                            Some of my projects can be found below, and you can view the public code on my <a href='https://github.com/WaiWasabi/'>Github</a>.</p>
+                        <p>I have a much better grasp of machine learning today than I did 4 years ago, and I smile at the progress I’ve made since then.
+                            I wouldn’t say I’m an expert; there's so much I have yet to learn. But every step I take brings my goal closer in sight.</p>
+                            
+                        <p>Some of my projects can be found below, and the public code is located in <a href='https://github.com/WaiWasabi/'>Github</a>.</p>
                 </div>
             </div>
         </div>
