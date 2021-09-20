@@ -46,7 +46,7 @@
     </div>
 
     <div class="content-wrapper">
-        <div class="horizontal-banner heading">
+        <div class="horizontal-banner heading base-light">
             <h2>C:\Users\aaron> python<br>
                 Python 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)] on win32
                 Type "help", "copyright", "credits" or "license" for more information. <br></h2>
@@ -81,8 +81,8 @@
 
         <div class="horizontal-banner">
             <div class="main-content base-light">
-                <h3><span class="keyword">def</span> <span class="method">getFavoritePieces</span>(<span class='const'>self</span>, num_tracks,
-                genre=<span class="string"><span class="string">'classical'</span></span>):</h3>
+                <h1><span class="keyword">def</span> <span class="method">getFavoritePieces</span>(<span class='const'>self</span>, num_tracks,
+                genre=<span class="string"><span class="string">'classical'</span></span>):</h1>
                 <div class="tab">
                 <h3><span class="const">self</span>.playlist = pickle.<span class="off-white">load</span>(<span class="off-white">open</span>(<span class="string">'Data/playlist'</span>))</h3>
                 <h3>num_tracks = <span class="off-white">min</span>(num_tracks, <span class="off-white">len</span>(<span class="const">self</span>.playlist))</h3>
@@ -94,7 +94,7 @@
                 <h3><span class="keyword">else</span>:</h3>
                     <div class="tab">
                         <h3><span class="keyword">return</span> <span class="string">f'</span>{<span class="const">self</span>.name} <span class="string">
-                                does have anything other than classical music in his playlist, but he reserves
+                                does not have anything other than classical music in his playlist, but he reserves
                                 "Castle on the Hill - Ed Sheeran" as his favorite pop song in case anyone asks.'
                             </span>
                         </h3>

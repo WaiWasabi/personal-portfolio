@@ -173,7 +173,7 @@ nav #logo-container {
 #nav-links > li:hover > .subnav {
 	opacity: 100%;
 	top: 100%;
-	transition: 3s;
+	transition: 1.5s;
 }
 
 
@@ -217,7 +217,7 @@ nav #logo-container {
 	.line {
 		width: 30px;
 		height: 3px;
-		background: whitesmoke;
+		background: var(--plaintext);
 		margin: 5px;
 	}
 	
@@ -282,15 +282,16 @@ nav #logo-container {
 
 .heading {
 	padding: 1em;
+	border-top: var(--plaintext) solid 4px;
 	justify-content: flex-start;
 }
 
 .heading h2 {
-	font-size: 2em;
+	font-size: max(2vw, 1em);;
 }
 
 .heading h1 {
-	font-size: 3em;
+	font-size: max(3vw, 1.5em);
 }
 
 .notecard {
@@ -386,11 +387,11 @@ nav #logo-container {
 }
 
 .grey-to-orange {
-	background: linear-gradient(to bottom, #323232 , #3b3327);
+	background: linear-gradient(to bottom, #323232 , #383229);
 }
 
 .orange-to-purple {
-	background: linear-gradient(to bottom, #3b3327, #262427);
+	background: linear-gradient(to bottom, #383229, #262427);
 }
 
 .circle {
@@ -400,6 +401,8 @@ nav #logo-container {
 }
 
 .main-content {
+	border-bottom: var(--plaintext) solid 2px;
+	border-top: var(--plaintext) solid 2px;
 	min-width: 30em;
 	flex: 2;
 	padding: 4em;
@@ -407,24 +410,31 @@ nav #logo-container {
 }
 
 .main-content h3 {
-	align-self: center;
-	font-size: max(1.4vw, 16px);
+	font-size: max(1.3vw, 10px);
 	line-height: 1.75em;
 	font-weight: 150;
 	margin: 0;
+}
+
+.main-content h1 {
+	font-size: max(1.7vw, 12px);
+	line-height: 1.75em;
+	font-weight: 400;
+	margin: 0;
+}
+
+.main-content h2 {
+	align-self: center;
+	padding-top: 1.75em;
+	font-size: max(1.7vw, 12px);
+	font-weight: 450;
+	color: var(--gold);
 }
 
 .tab {
 	margin-left: 2.5em;
 }
 
-.main-content h2 {
-	align-self: center;
-	padding-top: 1.75em;
-	font-size: 2.4em;
-	font-weight: 450;
-	color: var(--gold);
-}
 
 .side-content {
 	flex: 1;
@@ -478,6 +488,7 @@ nav #logo-container {
 img {
 	display: block;
 }
+
 .image-wrapper {
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
 	width: fit-content;
