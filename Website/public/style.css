@@ -127,9 +127,31 @@ nav #logo-container {
 
 #logo-container p {
 	font-size: 2em;
-	font-weight: 100;
+	font-weight: 900;
 	text-align: right;
 }
+
+.animated-gradient {
+	background: linear-gradient(to right, #AF1DF5, #FDB60D, #FCF84A);
+	background-color: var(--plaintext);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	background-size: 350%;
+	animation: gradient-bg 15s infinite alternate;
+}
+
+@keyframes gradient-bg {
+	0% {
+		background-position: left;
+	}
+
+	100% {
+		background-position: right;
+	}
+}
+
 
 #nav-links {
 	margin: 0;
@@ -443,6 +465,7 @@ nav #logo-container {
 	align-items: center;
 	padding: 2em;
 	min-width: 30vw;
+	border-left: var(--base-lightest) solid 2px;
 }
 
 .subheading {
