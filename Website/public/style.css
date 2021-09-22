@@ -264,6 +264,8 @@ nav #logo-container {
 }
 
 .horizontal-banner {
+	border-bottom: var(--base-lightest) solid 2px;
+	border-top: var(--base-lightest) solid 2px;
 	display: flex;
 	flex-flow: row wrap;
 	align-items: stretch;
@@ -401,8 +403,6 @@ nav #logo-container {
 }
 
 .main-content {
-	border-bottom: var(--plaintext) solid 2px;
-	border-top: var(--plaintext) solid 2px;
 	min-width: 30em;
 	flex: 2;
 	padding: 4em;
