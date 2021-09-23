@@ -2,15 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Spanish</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='../style.css'>
+    <title>Advanced Spanish</title>
+    <!--icon from https://www.flaticon.com/free-icon/html-coding_13706 -->
+    <link rel="icon" type="image/png" href="../Images/icon.ico"/>
 </head>
+
 <body>
-    <h2>Spanish</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam asperiores
-        dolorem doloribus quos! Aut fugiat praesentium minima nobis reiciendis debitis
-         itaque magnam. Et magnam non itaque fugit eaque beatae asperiores nam! Error
-          nisi nobis, aut exercitationem doloremque minima iusto ut sunt, quae tempora
-           dicta, cum fugiat molestias dolorem similique maxime!</p>
-    <p>This page is currently under construction. Come back in January!</p>
+    <video autoplay muted loop id='background-video'>
+        <!-- royalty free video from 
+        https://www.videvo.net/video/fractal-light-rays-rotating/1594/ -->
+        <source src='../Images/background.mp4' type='video/mp4'>
+    </video>
+    <div class="video-overlay"></div>
+
+    <nav>
+        <div id='logo-container'><p class='logo'>Aaron Tian</p></div>
+        <ul id='nav-links'>
+            <li><a href='../index.html'><div class="bg"></div></a><p><span>home</span>()</p></li>
+            <li>
+                <a href="#" class='current'><div class="bg"></div></a><p>>> <span class="current">Personal</span></p>
+                <ul class='subnav'>
+                    <li><a href="bio.html"><div class="bg"></div></a><p>.<span class="current">bio</span>()</p></li>
+                    <li><a href="stats.html"><div class="bg"></div></a><p>.<span>stats</span>()</p></li>
+                    <li><a href="blog.html"><div class="bg"></div></a><p>.<span>blog</span>()</p></li>
+                </ul>
+            </li>
+            <li><a href="cs.html"><div class="bg"></div></a><p><span>cs</span>()</p></li>
+            <li><a href="hum.html"><div class="bg"></div></a><p><span>humanities</span>()</p></li>
+            <li><a href="lang.html"><div class="bg"></div></a><p><span>spanish</span>()</p></li>
+            <li><a href="math.html"><div class="bg"></div></a><p><span>math</span>()</p></li>
+            <li><a href="physics.html"><div class="bg"></div></a><p><span>physics</span>()</p></li>
+            <li><a href="stem.html"><div class="bg"></div></a><p><span>stem</span>()</p></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line shorter"></div>
+            <div class="line shortest"></div>
+        </div>
+    </nav>
+    
+    <div id='title'>
+        <div><h1 class='logo animated-gradient'>Spanish</h1></div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="horizontal-banner heading">
+            <h2>C:\Users\aaron> python<br>
+                Python 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)] on win32
+                Type "help", "copyright", "credits" or "license" for more information. <br></h2>
+            <h1>>>> <span class="keyword">def</span> <span class="method">hola_mundo</span>():</h1>
+        </div>
+
+        <div class="horizontal-banner">
+            <div class="full-content">
+                <h2 class='method'>This page is under construction. Come back in January!</h2>
+                <p>Advanced Immersion Spanish is taught by Señora Wildfong. We mostly learn by simply communicating amongst ourselves in a Spanish-only environment.</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

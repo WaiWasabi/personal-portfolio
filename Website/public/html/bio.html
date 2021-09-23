@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='../style.css'>
     <title>Personal-Bio</title>
+
+    <!--icon from https://www.flaticon.com/free-icon/html-coding_13706 -->
+    <link rel="icon" type="image/png" href="../Images/icon.ico"/>
 </head>
 
 <body>
@@ -18,21 +21,21 @@
     <nav>
         <div id='logo-container'><p class='logo'>Aaron Tian</p></div>
         <ul id='nav-links'>
-            <li></div><a href='../index.html'><div class="bg"></div></a><p><span>home</span>()</p></li>
-            <li></div>
+            <li><a href='../index.html'><div class="bg"></div></a><p><span>home</span>()</p></li>
+            <li>
                 <a href="#" class='current'><div class="bg"></div></a><p>>> <span class="current">Personal</span></p>
                 <ul class='subnav'>
-                    <li></div><a href="bio.html"><div class="bg"></div></a><p>.<span class="current">bio</span>()</p></li>
-                    <li></div><a href="stats.html"><div class="bg"></div></a><p>.<span>stats</span>()</p></li>
-                    <li></div><a href="blog.html"><div class="bg"></div></a><p>.<span>blog</span>()</p></li>
+                    <li><a href="bio.html"><div class="bg"></div></a><p>.<span class="current">bio</span>()</p></li>
+                    <li><a href="stats.html"><div class="bg"></div></a><p>.<span>stats</span>()</p></li>
+                    <li><a href="blog.html"><div class="bg"></div></a><p>.<span>blog</span>()</p></li>
                 </ul>
             </li>
-            <li></div><a href="cs.html"><div class="bg"></div></a><p><span>cs</span>()</p></li>
-            <li></div><a href="hum.html"><div class="bg"></div></a><p><span>humanities</span>()</p></li>
-            <li></div><a href="lang.html"><div class="bg"></div></a><p><span>spanish</span>()</p></li>
-            <li></div><a href="math.html"><div class="bg"></div></a><p><span>math</span>()</p></li>
-            <li></div><a href="physics.html"><div class="bg"></div></a><p><span>physics</span>()</p></li>
-            <li></div><a href="stem.html"><div class="bg"></div></a><p><span>stem</span>()</p></li>
+            <li><a href="cs.html"><div class="bg"></div></a><p><span>cs</span>()</p></li>
+            <li><a href="hum.html"><div class="bg"></div></a><p><span>humanities</span>()</p></li>
+            <li><a href="lang.html"><div class="bg"></div></a><p><span>spanish</span>()</p></li>
+            <li><a href="math.html"><div class="bg"></div></a><p><span>math</span>()</p></li>
+            <li><a href="physics.html"><div class="bg"></div></a><p><span>physics</span>()</p></li>
+            <li><a href="stem.html"><div class="bg"></div></a><p><span>stem</span>()</p></li>
         </ul>
         <div class="hamburger">
             <div class="line"></div>
@@ -42,11 +45,11 @@
     </nav>
     
     <div id='title'>
-        <div><h1 class='logo'>About Me</p></div>
+        <div><h1 class='logo animated-gradient'>About Me</h1></div>
     </div>
 
     <div class="content-wrapper">
-        <div class="horizontal-banner heading base-light">
+        <div class="horizontal-banner heading">
             <h2>C:\Users\aaron> python<br>
                 Python 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)] on win32
                 Type "help", "copyright", "credits" or "license" for more information. <br></h2>
@@ -74,7 +77,7 @@
         </div>
 
         <div class="horizontal-banner">
-            <div class="subheading base-green">
+            <div class="subheading bg-grad-purple">
                 <h1>Clarinet</h1>
             </div>
         </div>
@@ -112,7 +115,9 @@
         
         <div class="horizontal-banner">
             <div class="split-content">
-                <div class="notecard dark-blue">
+                <div class="image-wrapper bg-grad-purple"><img src="../Images/debate.jpg" alt="me looking confused" style="width: 300px"></div>
+                <br>
+                <div class="notecard base-lighter">
                     <div class="text-wrapper">
                         <h2 class='method'>My Origin Story</h2>
                         <p>I didn’t even know what a clarinet was until the moment I decided to play it. In the 4th grade,
@@ -134,180 +139,194 @@
             </div>
         
             <div class="split-content">
-                <div class="text-wrapper">
-                    <h2 class='method'>District and All State</h2>
-                    <p>I have participated in the Central District Music Festival since 7th grade and was fortunate enough to be a part
-                        of the Massachusetts All-State festival in my freshman year: one of my most memorable experiences to date. The guest
-                        conductor, <a href="https://www.hartford.edu/directory/hartt/adsit-glen.aspx">Glen Adsit</a>, was a truly charismatic
-                        person; he touched every one of the 100+ musicians
-                        in the hall with his enthusiasm and cultivated a sense of community between us. He was particularly fond of a composer friend of his,
-                        David Maslanka, the music of whom helped him develop a deeper sense of spirituality during his battle with cancer. Adsit
-                        had the opportunity to meet personally with Maslanka, and he recovered from his illness soon afterward. Our closing
-                        piece, as he informed us, was a token of gratitude and a tribute to his friend’s death.
-                    </p>
-                    <p>We performed at Symphony Hall after 3 consecutive days of nonstop practice. Seeing Prof. Adsit cut off the final chord of
-                        Maslanka’s “Give Us This Day” gave me a profound feeling of exhilaration that I doubt I will ever recreate. I
-                        returned to the All-State Festival again in sophomore year, but the virtual experience was nowhere near as exciting as the
-                        real thing.</p>
+                <div class="notecard base-lighter">
+                    <div class="text-wrapper">
+                        <h2 class='method'>District and All State</h2>
+                        <p>I have participated in the Central District Music Festival since 7th grade and was fortunate enough to be a part
+                            of the Massachusetts All-State festival in my freshman year: one of my most memorable experiences to date. The guest
+                            conductor, <a href="https://www.hartford.edu/directory/hartt/adsit-glen.aspx">Glen Adsit</a>, was a truly charismatic
+                            person; he touched every one of the 100+ musicians
+                            in the hall with his enthusiasm and cultivated a sense of community between us. He was particularly fond of a composer friend of his,
+                            David Maslanka, the music of whom helped him develop a deeper sense of spirituality during his battle with cancer. Adsit
+                            had the opportunity to meet personally with Maslanka, and he recovered from his illness soon afterward. Our closing
+                            piece, as he informed us, was a token of gratitude and a tribute to his friend’s death.
+                        </p>
+                        <p>We performed at Symphony Hall after 3 consecutive days of nonstop practice. Seeing Prof. Adsit cut off the final chord of
+                            Maslanka’s “Give Us This Day” gave me a profound feeling of exhilaration that I doubt I will ever recreate. I
+                            returned to the All-State Festival again in sophomore year, but the virtual experience was nowhere near as exciting as the
+                            real thing.</p>
+                    </div>
                 </div>
                 <!--IMG: MMEA Logo, SRC: https://www.bso.org/Performance/Detail/107752-->
-                <div class="image-wrapper"><img src="../Images/mmea.jpg" alt="MMEA Logo" style="width:20em"></div>
+                <br>
+                <br>
+                <div class="image-wrapper bg-grad-pr"><img src="../Images/mmea.jpg" alt="MMEA Logo" style="width:20em"></div>
             </div>
         </div>
 
         <div class="horizontal-banner">
             <div class="full-content">
-                <div class="text-wrapper">
-                    <h2 class='method'>Claflin Hill</h2>
-                    <p> I played in the <a href="https://www.claflinhill.com/home">Claflin Hill Youth Wind Ensemble</a> from 2017-2020. 
-                        I was generously offered a seat on my first
-                        audition by the director, Paul Surapine, who evidently believed he could “whip me into shape”—for lack of a 
-                        better term. The experience was uncharted territory for me: the expectations were high, the music was difficult,
-                        and the other musicians were several heads taller than me. Admittedly, I was quite lost for the entire first 
-                        year. I struggled to play through tough passages despite practicing for hours, while the rest of my section 
-                        seemingly breezed through entire pieces on the first read. The concertmaster was particularly formidable—his
-                        technique and intonation were unmatched, and he served as a role model for me. </p>
-                        
-                        <div class="image-wrapper"><img src="../Images/claflin.jpg" alt="claflin hill logo" style="width:30em"></div>
-
-                        <p>Claflin showed me a beauty in music that I had never encountered in the cacophony known as middle school band.
-                            I used to believe that music was a procedure—a methodical practice in which playing the right notes and rhythms 
-                            corresponded to checked boxes on a rubric. After joining CHYS, I practiced so that I might play like the concertmaster 
-                            whom I looked up to so intently. I grew rapidly, and in my third year I rose to take the 1st chair after my idol graduated.</p>
+                <div class="notecard base-lighter">
+                    <div class="text-wrapper">
+                        <h2 class='method'>Claflin Hill</h2>
+                        <p> I played in the <a href="https://www.claflinhill.com/home">Claflin Hill Youth Wind Ensemble</a> from 2017-2020.
+                            I was generously offered a seat on my first
+                            audition by the director, Paul Surapine, who evidently believed he could “whip me into shape”—for lack of a
+                            better term. The experience was uncharted territory for me: the expectations were high, the music was difficult,
+                            and the other musicians were several heads taller than me. Admittedly, I was quite lost for the entire first
+                            year. I struggled to play through tough passages despite practicing for hours, while the rest of my section
+                            seemingly breezed through entire pieces on the first read. The concertmaster was particularly formidable—his
+                            technique and intonation were unmatched, and he served as a role model for me. </p>
+                            <br>
+                            <div class="image-wrapper bg-grad-blue"><img src="../Images/claflin.jpg" alt="claflin hill logo" style="width:30em"></div>
+                            <br>
+                            <p>Claflin showed me a beauty in music that I had never encountered in the cacophony known as middle school band.
+                                I used to believe that music was a procedure—a methodical practice in which playing the right notes and rhythms
+                                corresponded to checked boxes on a rubric. After joining CHYS, I practiced so that I might play like the concertmaster
+                                whom I looked up to so intently. I grew rapidly, and in my third year I rose to take the 1st chair after my idol graduated.</p>
+                    </div>
                 </div>
             </div>
         </div>
         
         <div class="horizontal-banner">
-            <div class="subheading dark-blue">
+            <div class="subheading bg-grad-green">
                 <h1>Machine Learning</h1>
             </div>
         </div>
 
         <div class="horizontal-banner">
             <div class="full-content">
-                <div class="text-wrapper">
-                    <h2 class='method'>Discovering a New World</h2>
-                    <p>I was first introduced to machine learning in a weeklong course over the summer of 7th grade. To be frank, it was rather poorly taught; 
-                        I essentially learned to copy a computer vision program from a board with no understanding of how or why the code works 
-                        (it was also written in TensorFlow 1.x. Blasphemous, right?). But the concept of making world-changing applications without
-                        needing materials or a lab was appealing to me, and harnessing that power became an obsession. </p>
-
-                        <p>The code was written in Python, and I had a limited understanding of the language. To practice, I started making scripts to
-                            solve problems I encountered in school, searching up concepts on the Internet when I needed to expand my toolkit. Looking back
-                            at the code I wrote back then, I laugh at its naivety (it was also written in Azure Notebooks... nostalgic). But it was all
-                            part of the learning process, and every project gave me valuable experience. By the start of my freshman year, I could solve
-                            problems that I never dreamed of approaching previously. </p>
-
-
-                        <p>With a newfound understanding of Python, I revisited the code I wrote years ago. Its syntax made sense to me now; it was
-                            speaking my language. However, I still didn't understand how the neural network actually 'learns'. Theoretical machine learning
-                            – the fundamental math that drives A.I algorithms – was my next pursuit. But upon glancing at the equations, I realized that
-                            I understood very little of them; they were deeply rooted in calculus and linear algebra. I never really had a passion for math,
-                            but learning these concepts was a necessary next step. I picked up just enough to re-derive each of the equations with meticulous 
-                            practice and some help from the internet.</p>
-                        
-                        <p>Equipped with this knowledge, I managed to build a trainable CNN from scratch, deriving all of the forward and backward-pass algorithms
-                            for gradient descent by hand. I pondered for hours on how to approach this problem, and I spent orders of magnitude more time debugging
-                            the code. The joy that I felt when the model finished training with 98% test accuracy on the MNIST dataset is indescribable.</p>
-
-                        <p>I have a much better grasp of machine learning today than I did 4 years ago, and I smile at the progress I’ve made since then.
-                            I wouldn’t say I’m an expert; there's so much I have yet to learn. But every step I take brings my goal closer in sight.</p>
-                            
-                        <p>Some of my projects can be found below, and the public code is located in <a href='https://github.com/WaiWasabi/'>Github</a>.</p>
+                <div class="notecard base-lighter">
+                    <div class="text-wrapper">
+                        <h2 class='method'>Discovering a New World</h2>
+                        <p>I was first introduced to machine learning in a weeklong course over the summer of 7th grade. To be frank, it was rather poorly taught;
+                            I essentially learned to copy a computer vision program from a board with no understanding of how or why the code works
+                            (it was also written in TensorFlow 1.x. Blasphemous, right?). But the concept of making world-changing applications without
+                            needing materials or a lab was appealing to me, and harnessing that power became an obsession. </p>
+                            <p>The code was written in Python, and I had a limited understanding of the language. To practice, I started making scripts to
+                                solve problems I encountered in school, searching up concepts on the Internet when I needed to expand my toolkit. Looking back
+                                at the code I wrote back then, I laugh at its naivety (it was also written in Azure Notebooks... nostalgic). But it was all
+                                part of the learning process, and every project gave me valuable experience. By the start of my freshman year, I could solve
+                                problems that I never dreamed of approaching previously. </p>
+                            <p>With a newfound understanding of Python, I revisited the code I wrote years ago. Its syntax made sense to me now; it was
+                                speaking my language. However, I still didn't understand how the neural network actually 'learns'. Theoretical machine learning
+                                – the fundamental math that drives A.I algorithms – was my next pursuit. But upon glancing at the equations, I realized that
+                                I understood very little of them; they were deeply rooted in calculus and linear algebra. I never really had a passion for math,
+                                but learning these concepts was a necessary next step. I picked up just enough to re-derive each of the equations with meticulous
+                                practice and some help from the internet.</p>
+                    
+                            <p>Equipped with this knowledge, I managed to build a trainable CNN from scratch, deriving all of the forward and backward-pass algorithms
+                                for gradient descent by hand. I pondered for hours on how to approach this problem, and I spent orders of magnitude more time debugging
+                                the code. The joy that I felt when the model finished training with 98% test accuracy on the MNIST dataset is indescribable.</p>
+                            <p>I have a much better grasp of machine learning today than I did 4 years ago, and I smile at the progress I’ve made since then.
+                                I wouldn’t say I’m an expert; there's so much I have yet to learn. But every step I take brings my goal closer in sight.</p>
+                    
+                            <p>Some of my projects can be found below, and the public code is located in <a href='https://github.com/WaiWasabi/'>Github</a>.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="horizontal-banner">
-            <div class="main-content">
-                <div class="h1">class ConvLayer(Layer):</div>
-  def __init__(self, kernel_size, activation, stride = 1, zero_padding = 'valid'):   # still need to implement zero padding
-    """kernel_size - a list of length 2 containing integers representing the x and y sizes of the filter"""
-    super().__init__()
-    self.activation = super().activations[activation]
-    self.kernel_size = kernel_size
-    self.stride = stride
-    self.zero_padding = zero_padding
-  
-  def feedforward(self, a): # a - a numpy array of dimensionality 4: (batch size, image x, image y, color channel)
-    self.set_input(a)
-    output = np.zeros([a.shape[0]] + [int((i-k)/self.stride) + 1 for i, k in zip(a.shape[1:3], self.kernel_size)] + [a.shape[3]])
-    a = np.transpose(a, (1,2,0,3))
-    output = np.transpose(output, (1,2,0,3)) # transpose output to (image x, image y, batch size, color channel) in order to set values in batches
-    for i in range(output.shape[0]):
-      for j in range(output.shape[1]):
-        output[i][j] = np.einsum("ijkl, ij -> kl", a[i*self.stride:i*self.stride+self.kernel_size[0], j*self.stride:j*self.stride+self.kernel_size[1]], self.filter)
-    self.z = np.transpose(output, (2,0,1,3)) + self.biases
-    return self.activation.fn(self.z)
-  
-  def backprop(self, dconv, lr): # dconv is the matrix of partial derivatives of shape (batch size, conv x, conv y, color channel), conv x and conv y are the sizes of the convoluted output from the layer's feedforward.
-    delta = dconv * self.activation.prime(self.z) # delta is the derivative of the cost with respect to z.
-    dCdb = delta
-    dCdF = np.zeros(self.filter.shape + (delta.shape[0],)) # initialize shape of filter gradient with shape (filter x, filter y, batch size)
-    delta, a = (np.transpose(delta, (1,2,0,3)), np.transpose(self.a, (1,2,0,3))) # reshape to dimensions (x, y, batch, color channel)
-    dCda = np.zeros(a.shape)
-    for i in range(delta.shape[0]):
-      for j in range(delta.shape[1]):
-        x, y = (i*self.stride, j*self.stride)
-        dCdF += np.sum(delta[i][j] * a[x:x+self.kernel_size[0], y:y+self.kernel_size[1]], axis = 3) # a is the orginal input to the layer.
-        dCda[x:x+self.kernel_size[0], y:y+self.kernel_size[1]] += np.einsum("ij, kl -> ijkl", self.filter, delta[i][j])
-    self.filter = self.filter - (lr/dCdF.shape[2])*np.sum(np.transpose(dCdF, (2,0,1)), axis = 0)
-    self.biases = self.biases - (lr/dCdb.shape[0])*np.sum(dCdb, axis = 0)
-    return np.transpose(dCda, (2,0,1,3))
+            <div class="main-content base-light">
+                <h3 class='comment'># constructor and feedforward/backprop algorithms of a convolutional network I derived and implemented from scratch.</h3>
+                <h1><span class="keyword">class</span> <span class="off-white">ConvLayer</span>(Layer):</h1>
+                    <div class="tab">
+                    <h1><span class="keyword">def</span> <span class="method">__init__</span>(<span class="const">self</span>, kernel_size, activation, stride=<span class="num">1</span>, zero_padding=<span class="string">'valid'</span>):</h1>
+                    <div class="tab">
+                    <h3><span class="string">"""kernel_size - a list of length 2 containing integers representing the x and y sizes of the filter"""</span></h3>
+                    <h3>super().<span class="method">__init__</span>()</h3>
+                    <h3><span class="const">self</span>.activation = super().activations[activation]</h3>
+                    <h3><span class="const">self</span>.kernel_size = kernel_size</h3>
+                    <h3><span class="const">self</span>.stride = stride</h3>
+                    <h3><span class="const">self</span>.zero_padding = zero_padding</h3>
+                    </div>
+                <br>
+                <h1><span class="keyword">def</span> <span class="method">feedforward</span>(<span class="const">self</span>, a): <span class="comment"># a : ndarray of R^4: (batch size, x, y, channel)</span></h1>
+                    <div class="tab">
+                    <h3><span class="const">self</span>.<span class="method">set_input</span>(a)</h3>
+                    <h3>output = np.zeros([a.shape[0]] + [int((i-k)/<span class="const">self</span>.stride) + <span class="num">1</span> for i, k in zip(a.shape[<span class="num">1</span>:<span class="num">3</span>], <span class="const">self</span>.kernel_size)] + [a.shape[<span class="num">3</span>]])</h3>
+                    <h3>a = np.transpose(a, (<span class="num">1</span>,<span class="num">2</span>,<span class="num">0</span>,<span class="num">3</span>))</h3>
+                    <h3>output = np.transpose(output, (<span class="num">1</span>,<span class="num">2</span>,<span class="num">0</span>,<span class="num">3</span>)) <span class="comment"># to (image x, image y, batch size, channel) : set values in batches</span></h3>
+                    <h3><span class="keyword">for</span> i <span class="keyword">in</span> range(output.shape[<span class="num">0</span>]):</h3>
+                        <div class="tab">
+                        <h3><span class="keyword">for</span> j <span class="keyword">in</span> range(output.shape[<span class="num">1</span>]):</h3>
+                            <div class="tab">
+                            <h3>output[i][j] = np.einsum("ijkl, ij -> kl", a[i*<span class="const">self</span>.stride:i*<span class="const">self</span>.stride+<span class="const">self</span>.kernel_size[<span class="num">0</span>], j*<span class="const">self</span>.stride:j*<span class="const">self</span>.stride+<span class="const">self</span>.kernel_size[<span class="num">1</span>]], <span class="const">self</span>.filter)</h3>
+                            </div>
+                        </div>
+                    <h3><span class="const">self</span>.z = np.transpose(output, (<span class="num">2</span>,<span class="num">0</span>,<span class="num">1</span>,<span class="num">3</span>)) + <span class="const">self</span>.biases</h3>
+                    <h3><span class="keyword">return</span> <span class="const">self</span>.activation.fn(<span class="const">self</span>.z)</h3>
+                    </div>
+                <br>
+                <h1><span class="keyword">def</span> <span class="method">backprop</span>(<span class="const">self</span>, dconv, lr): <span class="comment"># dconv : da/dL from layer FF.</span></h1>
+                    <div class="tab">
+                    <h3>delta = dconv * <span class="const">self</span>.activation.prime(<span class="const">self</span>.z) <span class="comment"># delta is the derivative of the cost with respect to z.</span></h3>
+                    <h3>dCdb = delta</h3>
+                    <h3>dCdF = np.zeros(<span class="const">self</span>.filter.shape + (delta.shape[<span class="num">0</span>],)) <span class="comment"># grad filter (filter x, filter y, batch size)</span></h3>
+                    <h3>delta, a = (np.transpose(delta, (<span class="num">1</span>,<span class="num">2</span>,<span class="num">0</span>,<span class="num">3</span>)), np.transpose(<span class="const">self</span>.a, (<span class="num">1</span>,<span class="num">2</span>,<span class="num">0</span>,<span class="num">3</span>))) <span class="comment"># reshape to dimensions (x, y, batch, channel)</span></h3>
+                    <h3>dCda = np.zeros(a.shape)</h3>
+                    <h3><span class="keyword">for</span> i <span class="keyword">in</span> range(delta.shape[<span class="num">0</span>]):</h3>
+                        <div class="tab">
+                        <h3><span class="keyword">for</span> j <span class="keyword">in</span> range(delta.shape[<span class="num">1</span>]):</h3>
+                            <div class="tab">
+                            <h3>x, y = (i * <span class="const">self</span>.stride, j * <span class="const">self</span>.stride)</h3>
+                            <h3>dCdF += np.sum(delta[i][j] * a[x:x+<span class="const">self</span>.kernel_size[<span class="num">0</span>], y:y+<span class="const">self</span>.kernel_size[<span class="num">1</span>]], axis=<span class="num">3</span>) <span class="comment"># a is the orginal input to the layer.</span></h3>
+                            <h3>dCda[x:x+<span class="const">self</span>.kernel_size[<span class="num">0</span>], y:y+<span class="const">self</span>.kernel_size[<span class="num">1</span>]] += np.einsum("ij,kl->ijkl", <span class="const">self</span>.filter, delta[i][j])</h3>
+                            </div>
+                        </div>
+                    <h3><span class="const">self</span>.filter = <span class="const">self</span>.filter - (lr/dCdF.shape[<span class="num">2</span>])*np.sum(np.transpose(dCdF, (<span class="num">2</span>,<span class="num">0</span>,<span class="num">1</span>)), axis=<span class="num">0</span>)</h3>
+                    <h3><span class="const">self</span>.biases = <span class="const">self</span>.biases - (lr/dCdb.shape[<span class="num">0</span>])*np.sum(dCdb, axis=<span class="num">0</span>)</h3>
+                    <h3><span class="keyword">return</span> np.transpose(dCda, (<span class="num">2</span>,<span class="num">0</span>,<span class="num">1</span>,<span class="num">3</span>))</h3>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="horizontal-banner">
             <div class="split-content">
-                <div class="text-wrapper">
-                    <h2 class="method">UMass Research Group</h2>
-                    <p>I joined a <a href="https://elements.chem.umass.edu/zlinqcgroup/">quantum chemistry lab</a> at UMass Amherst over the summer, headed by Professor Zhou Lin. I gained experience 
-                        in data processing and graph neural networks–specifically, I used RDKit to preprocess molecular SMILES and 
-                        PyTorch/pytorch_geometric to build graph processing networks. Currently, I am working on an ongoing project involving 
-                        the prediction of optical properties of chromophores in solvents. In essence, this is a multi-target regression problem, 
-                        but it has several intricacies. Firstly, molecules are identified by their atoms and the bonds that connect them. This 
-                        data is difficult to represent in latent space, so I decided on encoding them as graphs instead (non-Euclidean data 
-                        consisting of node features and an adjacency matrix). Additionally, since the solvent affects the molecule’s optical 
-                        properties, there is a need to process multiple graphs simultaneously to account for the interaction between them. The 
-                        project hasn’t made any progress after school started, as I couldn’t find time to work on it. However, some of the 
-                        problems I encountered in the lab have inspired my research for the STEM1 project.
-                    </p>
+                <div class="notecard base-lighter">
+                    <div class="text-wrapper">
+                        <h2 class="method">UMass Research Group</h2>
+                        <p>I joined a <a href="https://elements.chem.umass.edu/zlinqcgroup/">quantum chemistry lab</a> at UMass Amherst over the summer, headed by Professor Zhou Lin. I gained experience
+                            in data processing and graph neural networks–specifically, I used RDKit to preprocess molecular SMILES and
+                            PyTorch/pytorch_geometric to build graph processing networks. Currently, I am working on an ongoing project involving
+                            the prediction of optical properties of chromophores in solvents. In essence, this is a multi-target regression problem,
+                            but it has several intricacies. Firstly, molecules are identified by their atoms and the bonds that connect them. This
+                            data is difficult to represent in latent space, so I decided on encoding them as graphs instead (non-Euclidean data
+                            consisting of node features and an adjacency matrix). Additionally, since the solvent affects the molecule’s optical
+                            properties, there is a need to process multiple graphs simultaneously to account for the interaction between them. The
+                            project hasn’t made any progress after school started, as I couldn’t find time to work on it. However, some of the
+                            problems I encountered in the lab have inspired my research for the STEM1 project.
+                        </p>
+                    </div>
                 </div>
                 <br>
                 <!--src: https://elements.chem.umass.edu/zlinqcgroup/-->
-                <div class="image-wrapper"><img src="../Images/lin-group.png" alt="group photo over zoom" style="width:450px"></div>
+                <div class="image-wrapper bg-grad-green"><img src="../Images/lin-group.png" alt="group photo over zoom" style="width:450px"></div>
             </div>
             <div class="split-content">
                 <!--src: https://www.facebook.com/universityatbuffalo/-->
                 <img src="../Images/ubuffalo.png" alt="ubuffalo logo">
                 <br>
-                <div class="text-wrapper">
-                    <h2 class="method">University @ Buffalo Internship</h2>
-                    <p>I worked briefly with PhD student Shuo Qian and <a href="http://www.buffalo.edu/bioinformatics/resources/faculty/profile.html?ubit=junqu">Professor Jun Qu</a>
-                        on the analysis of proteomics data. During this time, I learned to use Pandas, a python library for handling
-                        matrices and spreadsheets. I still prefer to work exclusively with NumPy when dealing with matrices, but Pandas
-                        admittedly has some useful features that can’t be done in np. One of my projects was to create a binary classifier
-                        for a quantitative proteomics dataset, and I approached this problem with a rather naive approach using a fully-connected
-                        neural network, batch normalization, dropout, ReLU activations, and a sigmoidal prediction layer. However, due to the
-                        limited amount of training samples, the model was grossly overfit and doubtlessly performed worse than standard statistical
-                        analysis. This experience taught me that machine learning isn’t always the right solution to a problem; existing computational
-                        methods should always be utilized if they exist and conform to some qualifications.
-                    </p>
+                <div class="notecard base-lighter">
+                    <div class="text-wrapper">
+                        <h2 class="method">University @ Buffalo Internship</h2>
+                        <p>I worked briefly with PhD student Shuo Qian and <a href="http://www.buffalo.edu/bioinformatics/resources/faculty/profile.html?ubit=junqu">Professor Jun Qu</a>
+                            on the analysis of proteomics data. During this time, I learned to use Pandas, a python library for handling
+                            matrices and spreadsheets. I still prefer to work exclusively with NumPy when dealing with matrices, but Pandas
+                            admittedly has some useful features that can’t be done in np. One of my projects was to create a binary classifier
+                            for a quantitative proteomics dataset, and I approached this problem with a rather naive approach using a fully-connected
+                            neural network, batch normalization, dropout, ReLU activations, and a sigmoidal prediction layer. However, due to the
+                            limited amount of training samples, the model was grossly overfit and doubtlessly performed worse than standard statistical
+                            analysis. This experience taught me that machine learning isn’t always the right solution to a problem; existing computational
+                            methods should always be utilized if they exist and conform to some qualifications.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="horizontal-banner">
-            <div class="subheading">
-                <h1>Other things about me</h1>
-            </div>
-        </div>
     </div>
-
-
-    <div class="footer">
-        
-    </div>
-    <script src='../app.js'></script>
 </body>
 </html>
