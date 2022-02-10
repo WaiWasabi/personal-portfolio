@@ -8,12 +8,16 @@
 
     <!--icon from https://www.flaticon.com/free-icon/html-coding_13706 -->
     <link rel="icon" type="image/png" href="../Images/icon.ico"/>
+    <link rel="stylesheet" href="../idea.css">
+
+    <!--code formatting by https://highlightjs.org/-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 
 <body>
     <video autoplay muted loop id='background-video'>
-        <!-- royalty free video from 
-        https://www.videvo.net/video/fractal-light-rays-rotating/1594/ -->
+        <!-- royalty free video from https://www.videvo.net/video/fractal-light-rays-rotating/1594/ -->
         <source src='../Images/background.mp4' type='video/mp4'>
     </video>
     <div class="video-overlay"></div>
@@ -86,32 +90,23 @@
 
         <div class="horizontal-banner">
             <div class="main-content base-light">
-                <h1><span class="keyword">def</span> <span class="method">getFavoritePieces</span>(<span class='const'>self</span>, num_tracks,
-                genre=<span class="string"><span class="string">'classical'</span></span>):</h1>
-                <div class="tab">
-                <h3><span class="const">self</span>.playlist = pickle.<span class="off-white">load</span>(<span class="off-white">open</span>(<span class="string">'Data/playlist'</span>))</h3>
-                <h3>num_tracks = <span class="off-white">min</span>(num_tracks, <span class="off-white">len</span>(<span class="const">self</span>.playlist))</h3>
-                <br>
-                <h3><span class="keyword">if</span> genre == <span class="string">'classical'</span>:</h3>
-                <div class="tab">
-                    <h3><span><span class="keyword">return</span> <span class="const">self</span>.playlist[:num_tracks]</span></h3>
-                </div>
-                <h3><span class="keyword">else</span>:</h3>
-                    <div class="tab">
-                        <h3><span class="keyword">return</span> <span class="string">f'</span>{<span class="const">self</span>.name} <span class="string">
-                                does not have anything other than classical music in his playlist, but he reserves
-                                "Castle on the Hill - Ed Sheeran" as his favorite pop song in case anyone asks.'
-                            </span>
-                        </h3>
-                    </div>
-                </div>
-                <br>
-                <h3>>>> .<span class="method">getFavoritePieces</span>(<span class="num">5</span>)</h3>
-                <h3>[<span class="string">'Ballade no. 1 - Chopin'</span>,
-                    <span class="string">'Widmung - Schumann arr. Liszt'</span>,
-                    <span class="string">'Danse Macabre - Saint Saens'</span>,
-                    <span class="string">'Etude op. 10 no. 3 - Chopin'</span>,
-                    <span class="string">'Carmen Fantaisie - Sarasate arr. Baldeyrou'</span>]</h3>
+                <pre>
+                    <code>
+def getFavoritePieces(self, num_tracks, genre='classical'):
+    self.playlist = pickle.load(open('Data/playlist'))
+    num_tracks = min(num_tracks, len(self.playlist))
+                    
+    if genre == 'classical':
+        return self.playlist[:num_tracks]
+    else:
+        return f'{self.name} does not have anything other than classical music in his playlist, but he reserves 
+                "Castle on the Hill - Ed Sheeran" as his favorite pop song in case anyone asks.'
+                    
+>>> .getFavoritePieces(5)
+['Ballade no. 1 - Chopin', 'Widmung - Schumann arr. Liszt', 'Danse Macabre - Saint Saens', 
+'Etude op. 10 no. 3 - Chopin', 'Carmen Fantaisie - Sarasate arr. Baldeyrou']
+                    </code>
+                </pre>
             </div>
         </div>
         
@@ -230,60 +225,44 @@
             </div>
         </div>
 
-        <div class="horizontal-banner">
-            <div class="main-content base-light">
-                <h3 class='comment'># constructor and feedforward/backprop algorithms of a convolutional network I derived and implemented from scratch.</h3>
-                <h1><span class="keyword">class</span> <span class="off-white">ConvLayer</span>(Layer):</h1>
-                    <div class="tab">
-                    <h1><span class="keyword">def</span> <span class="method">__init__</span>(<span class="const">self</span>, kernel_size, activation, stride=<span class="num">1</span>, zero_padding=<span class="string">'valid'</span>):</h1>
-                    <div class="tab">
-                    <h3><span class="string">"""kernel_size - a list of length 2 containing integers representing the x and y sizes of the filter"""</span></h3>
-                    <h3>super().<span class="method">__init__</span>()</h3>
-                    <h3><span class="const">self</span>.activation = super().activations[activation]</h3>
-                    <h3><span class="const">self</span>.kernel_size = kernel_size</h3>
-                    <h3><span class="const">self</span>.stride = stride</h3>
-                    <h3><span class="const">self</span>.zero_padding = zero_padding</h3>
-                    </div>
-                <br>
-                <h1><span class="keyword">def</span> <span class="method">feedforward</span>(<span class="const">self</span>, a): <span class="comment"># a : ndarray of R^4: (batch size, x, y, channel)</span></h1>
-                    <div class="tab">
-                    <h3><span class="const">self</span>.<span class="method">set_input</span>(a)</h3>
-                    <h3>output = np.zeros([a.shape[0]] + [int((i-k)/<span class="const">self</span>.stride) + <span class="num">1</span> for i, k in zip(a.shape[<span class="num">1</span>:<span class="num">3</span>], <span class="const">self</span>.kernel_size)] + [a.shape[<span class="num">3</span>]])</h3>
-                    <h3>a = np.transpose(a, (<span class="num">1</span>,<span class="num">2</span>,<span class="num">0</span>,<span class="num">3</span>))</h3>
-                    <h3>output = np.transpose(output, (<span class="num">1</span>,<span class="num">2</span>,<span class="num">0</span>,<span class="num">3</span>)) <span class="comment"># to (image x, image y, batch size, channel) : set values in batches</span></h3>
-                    <h3><span class="keyword">for</span> i <span class="keyword">in</span> range(output.shape[<span class="num">0</span>]):</h3>
-                        <div class="tab">
-                        <h3><span class="keyword">for</span> j <span class="keyword">in</span> range(output.shape[<span class="num">1</span>]):</h3>
-                            <div class="tab">
-                            <h3>output[i][j] = np.einsum("ijkl, ij -> kl", a[i*<span class="const">self</span>.stride:i*<span class="const">self</span>.stride+<span class="const">self</span>.kernel_size[<span class="num">0</span>], j*<span class="const">self</span>.stride:j*<span class="const">self</span>.stride+<span class="const">self</span>.kernel_size[<span class="num">1</span>]], <span class="const">self</span>.filter)</h3>
-                            </div>
-                        </div>
-                    <h3><span class="const">self</span>.z = np.transpose(output, (<span class="num">2</span>,<span class="num">0</span>,<span class="num">1</span>,<span class="num">3</span>)) + <span class="const">self</span>.biases</h3>
-                    <h3><span class="keyword">return</span> <span class="const">self</span>.activation.fn(<span class="const">self</span>.z)</h3>
-                    </div>
-                <br>
-                <h1><span class="keyword">def</span> <span class="method">backprop</span>(<span class="const">self</span>, dconv, lr): <span class="comment"># dconv : da/dL from layer FF.</span></h1>
-                    <div class="tab">
-                    <h3>delta = dconv * <span class="const">self</span>.activation.prime(<span class="const">self</span>.z) <span class="comment"># delta is the derivative of the cost with respect to z.</span></h3>
-                    <h3>dCdb = delta</h3>
-                    <h3>dCdF = np.zeros(<span class="const">self</span>.filter.shape + (delta.shape[<span class="num">0</span>],)) <span class="comment"># grad filter (filter x, filter y, batch size)</span></h3>
-                    <h3>delta, a = (np.transpose(delta, (<span class="num">1</span>,<span class="num">2</span>,<span class="num">0</span>,<span class="num">3</span>)), np.transpose(<span class="const">self</span>.a, (<span class="num">1</span>,<span class="num">2</span>,<span class="num">0</span>,<span class="num">3</span>))) <span class="comment"># reshape to dimensions (x, y, batch, channel)</span></h3>
-                    <h3>dCda = np.zeros(a.shape)</h3>
-                    <h3><span class="keyword">for</span> i <span class="keyword">in</span> range(delta.shape[<span class="num">0</span>]):</h3>
-                        <div class="tab">
-                        <h3><span class="keyword">for</span> j <span class="keyword">in</span> range(delta.shape[<span class="num">1</span>]):</h3>
-                            <div class="tab">
-                            <h3>x, y = (i * <span class="const">self</span>.stride, j * <span class="const">self</span>.stride)</h3>
-                            <h3>dCdF += np.sum(delta[i][j] * a[x:x+<span class="const">self</span>.kernel_size[<span class="num">0</span>], y:y+<span class="const">self</span>.kernel_size[<span class="num">1</span>]], axis=<span class="num">3</span>) <span class="comment"># a is the orginal input to the layer.</span></h3>
-                            <h3>dCda[x:x+<span class="const">self</span>.kernel_size[<span class="num">0</span>], y:y+<span class="const">self</span>.kernel_size[<span class="num">1</span>]] += np.einsum("ij,kl->ijkl", <span class="const">self</span>.filter, delta[i][j])</h3>
-                            </div>
-                        </div>
-                    <h3><span class="const">self</span>.filter = <span class="const">self</span>.filter - (lr/dCdF.shape[<span class="num">2</span>])*np.sum(np.transpose(dCdF, (<span class="num">2</span>,<span class="num">0</span>,<span class="num">1</span>)), axis=<span class="num">0</span>)</h3>
-                    <h3><span class="const">self</span>.biases = <span class="const">self</span>.biases - (lr/dCdb.shape[<span class="num">0</span>])*np.sum(dCdb, axis=<span class="num">0</span>)</h3>
-                    <h3><span class="keyword">return</span> np.transpose(dCda, (<span class="num">2</span>,<span class="num">0</span>,<span class="num">1</span>,<span class="num">3</span>))</h3>
-                    </div>
-                </div>
-            </div>
+        <div class="horizontal-banner base-light">
+            <pre><code>
+# constructor and feedforward/backprop algorithms of a convolutional network I derived and implemented from scratch.
+class ConvLayer(Layer):
+    def __init__(self, kernel_size, activation, stride=1, zero_padding='valid'):
+        """kernel_size - a list of length 2 containing integers representing the x and y sizes of the filter"""
+        super().__init__()
+        self.activation = super().activations[activation]
+        self.kernel_size = kernel_size
+        self.stride = stride
+        self.zero_padding = zero_padding
+
+    def feedforward(self, a): # a : ndarray of R^4: (batch size, x, y, channel)
+        self.set_input(a)
+        output = np.zeros([a.shape[0]] + [int((i-k)/self.stride) + 1 for i, k in zip(a.shape[1:3], self.kernel_size)] + [a.shape[3]])
+        a = np.transpose(a, (1,2,0,3))
+        output = np.transpose(output, (1,2,0,3)) # to (image x, image y, batch size, channel) : set values in batches
+        for i in range(output.shape[0]):
+            for j in range(output.shape[1]):
+                output[i][j] = np.einsum("ijkl, ij -> kl", a[i*self.stride:i*self.stride+self.kernel_size[0], j*self.stride:j*self.stride+self.kernel_size[1]], self.filter)
+        self.z = np.transpose(output, (2,0,1,3)) + self.biases
+        return self.activation.fn(self.z)
+
+    def backprop(self, dconv, lr): # dconv : da/dL from layer FF.
+        delta = dconv * self.activation.prime(self.z) # delta is the derivative of the cost with respect to z.
+        dCdb = delta
+        dCdF = np.zeros(self.filter.shape + (delta.shape[0],)) # grad filter (filter x, filter y, batch size)
+        delta, a = (np.transpose(delta, (1,2,0,3)), np.transpose(self.a, (1,2,0,3))) # reshape to dimensions (x, y, batch, channel)
+        dCda = np.zeros(a.shape)
+        for i in range(delta.shape[0]):
+            for j in range(delta.shape[1]):
+                x, y = (i * self.stride, j * self.stride)
+                dCdF += np.sum(delta[i][j] * a[x:x+self.kernel_size[0], y:y+self.kernel_size[1]], axis=3) # a is the orginal input to the layer.
+                dCda[x:x+self.kernel_size[0], y:y+self.kernel_size[1]] += np.einsum("ij,kl->ijkl", self.filter, delta[i][j])
+        self.filter = self.filter - (lr/dCdF.shape[2])*np.sum(np.transpose(dCdF, (2,0,1)), axis=0)
+        self.biases = self.biases - (lr/dCdb.shape[0])*np.sum(dCdb, axis=0)
+        return np.transpose(dCda, (2,0,1,3))
+            </code></pre>
         </div>
 
         <div class="horizontal-banner">

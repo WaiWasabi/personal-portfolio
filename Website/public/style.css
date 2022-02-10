@@ -575,3 +575,13 @@ iframe {
 	height: 600px;
 	border: 0;
 }
+
+pre code {
+	background: black;
+}
+
+pre {
+    white-space: pre-wrap;
+	width:fit-content;
+	align-self: center;
+}
