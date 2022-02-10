@@ -553,6 +553,23 @@ nav #logo-container {
 	transition: 1s;
 }
 
+.full-content h2 {
+	color: var(--gold);
+}
+
+.full-content h3 {
+	font-size: 1.35em;
+	font-weight: 900;
+	margin-bottom: 0em;
+	color: #ffffff;
+}
+
+.full-content p {
+	margin-top: 0.5em;
+	margin-bottom: 2em;
+	line-height: 1.75em;
+}
+
 .text-wrapper {
 	line-height: 1.75em;
 }
