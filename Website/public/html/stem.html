@@ -91,7 +91,7 @@
 
         <div class="horizontal-banner">
             <div class="full-content">
-                <h2 class="center">Background</h2>
+                <h2 class="text-center">Background</h2>
                 <p>The discovery of new small molecule drugs is a time-consuming and expensive process, costing over $2.5 billion and taking 10 to 15 years on average (DiMasi et al., 2016). To compensate for these costs, pharmaceutical companies rely heavily on the blockbuster model, in which a small number of successful drugs--each generating over $1 billion annually--drive the majority of sales (Malik, 2008). Under this paradigm, existing blockbusters must be promptly replaced by new ones when their patents expire, as their prices drop by up to 80% within 6 to 12 months of expiration. However, finding replacements may prove to be increasingly difficult, as drugs are now being released at a slower rate: the average number of globally launched drugs decreased from 44 between 1995 and 2000 to 33 from 2001 to 2006. This fact, alongside a rise in biologic treatments, foreshadows an unpromising future for small molecule therapeutics. Nonetheless, the benefits of small molecule drugs—simple dosing protocols, ease of manufacture, and oral bioavailability—should not be ignored (Ngo & Garneau-Tsodikova, 2018). It may be possible to revive small molecule drug development by automating specific processes within the industry, such as the discovery stages of hit-to-lead and lead optimization.
                 </p>
                 <h3>Previous Work</h3>
@@ -105,7 +105,7 @@
 
         <div class="horizontal-banner">
             <div class="full-content">
-                <h2 class="center">Methods</h2>
+                <h2 class="text-center">Methods</h2>
                 <div class="image-wrapper bg-grad-purple"><img src="../Images/synthesis-tree.png" alt="synthesis tree used in the generation of synthesizable drug compounds" style="width:750px"></div>
                 <br>
                 <h3>Materials</h3>
@@ -128,17 +128,17 @@
 
         <div class="horizontal-banner">
             <div class="full-content">
-                <img src="../Images/models.png" alt="models of networks used in SAC">
-                <img src="../Images/fig1-2.png" alt="Figures 1 and 2.">
+                <img src="../Images/models.png" alt="models of networks used in SAC" style="width:650px">
+                <img src="../Images/fig1-2.png" alt="Figures 1 and 2." style="width:650px">
                 <br>
-                <h2 class='center'>Analysis</h2>
+                <h2 class='text-center'>Analysis</h2>
                 <p>The results shown in Figure 1 demonstrate drastic variability in the model performance based on the predefined reaction prioritization order. This suggests that further improvements can be made to the model either by treating the order of reactions as a hyperparameter and optimizing it through random search, or extending the framework to predict the best reaction alongside the reactants. The latter option was considered in the implementation of the model but was not pursued because the number of available reactions varied heavily based on the reactants, and was thus impractical to model with a static prediction space. </p>
                 <p>Figure 2 displays the results of a second test, in which a subset of 50 lead molecules selected from the ZINC “Clean Leads” database by Irwin et al. (2012) were passed as optimization targets to the model. The top-1 scoring molecule for quantitative estimate of drug-likeness (QED) was selected from each run.  The results demonstrate the ability of the model to perform molecular property optimization. An unpaired t-test comparing the QED of the two molecular sets yielded a p value &lt; 0.001, showing that the optimization did indeed affect the QED of the lead molecule.</p>
             </div>
         </div>
         <div class="horizontal-banner">
             <div class="full-content">
-                <h2 class="center">Discussion</h2>
+                <h2 class="text-center">Discussion</h2>
                 <p>In this project, a lightweight reinforcement learning-based model for lead optimization was developed. In comparison to previous works, the soft-actor critic approach shows greater balance between sample efficiency, computational complexity, and model performance. On average, the model takes &lt; 2 minutes to train on a given target, making it a feasible option for rapid optimization of a curated selection of lead compounds. </p>
                 <p>Future work must be done to extend the action set to a multi-discrete problem in which the agent makes predictions for both the reactant and the reaction. Curating a specifically designed database for reaction selection through domain knowledge will also achieve the same ends. The framework itself may be further optimized through rigorous hyperparameter searching. 
                 </p>
@@ -146,7 +146,7 @@
         </div>
         <div class="horizontal-banner">
             <div class="full-content">
-                <h2 class="center">References</h2>
+                <h2 class="text-center">References</h2>
                 <p>
                     DiMasi, J. A., Grabowski, H. G., & Hansen, R. W. (2016). Innovation in the pharmaceutical industry: New estimates of R&D costs. Journal of Health Economics, 47, 20–33. https://doi.org/10.1016/j.jhealeco.2016.01.012<br>
                     Gao, W., & Coley, C. W. (2020). The Synthesizability of Molecules Proposed by Generative Models. ArXiv:2002.07007 [Cs, q-Bio, Stat]. http://arxiv.org/abs/2002.07007<br>

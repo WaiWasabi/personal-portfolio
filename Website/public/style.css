@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 /* main font: https://www.jetbrains.com/lp/mono/ */
-
 @font-face {
 	font-family: 'main';
 	font-weight: normal;
@@ -46,18 +45,19 @@
 	font-family: 'main', sans-serif;
 }
 
+/* general styles */
+.text-center {
+	text-align: center;
+}
+
+/* general content */
 body {
-	color: var(--plaintext);
-	position: relative;
-	margin: 0;
 	background: var(--base);
-	background-image: url("Images/background.mp4");
+	color: var(--plaintext);
+	margin: 0;
 	overflow-x: hidden;
 }
 
-.center {
-	text-align: center;
-}
 
 .lock {
 	overflow: hidden;
@@ -211,7 +211,6 @@ nav #logo-container {
 	transition: 0.8s;
 }
 
-
 .subnav {
 	background: linear-gradient(to right, rgba(4, 7, 10, 0) 95%, rgba(18, 219, 255, 0.75));
 	position: absolute;
@@ -223,7 +222,6 @@ nav #logo-container {
 	width: 100%;
 	padding: 0;
 }
-
 
 .subnav li {
 	width: 100%;
